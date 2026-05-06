@@ -22,7 +22,7 @@
                             <p>
                                 <i class="fa-solid fa-lightbulb text-info"></i>
                                 <strong>
-                                    {!!  trans('admin/users/general.ldap_sync_intro', ['link' => 'https://snipe-it.readme.io/docs/ldap-sync#/']) !!}
+                                    {!!  trans('admin/users/general.ldap_sync_intro', ['link' => 'https://staffingly.readme.io/docs/ldap-sync#/']) !!}
                                 </strong>
                             </p>
                         </div>

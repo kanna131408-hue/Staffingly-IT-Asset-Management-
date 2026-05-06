@@ -13,7 +13,7 @@ class RemoveExplicitEols extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:remove-explicit-eols {--model_name= : The name of the asset model to update (use "all" to update all models)}';
+    protected $signature = 'staffingly:remove-explicit-eols {--model_name= : The name of the asset model to update (use "all" to update all models)}';
 
     /**
      * The console command description.

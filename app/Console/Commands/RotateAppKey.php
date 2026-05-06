@@ -17,7 +17,7 @@ class RotateAppKey extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:rotate-key
+    protected $signature = 'staffingly:rotate-key
                             {previous_key? : The previous key to rotate from} 
                             {--emergency : Emergency mode - rotate from .env APP_KEY to newly-generated one, modifying .env} 
                             {--force : Skip interactive confirmation}';

@@ -5,7 +5,7 @@
 {{ trans('mail.test_mail_text') }}
 
 Thanks,
-Snipe-IT
+Staffingly
 @if ($setupCompleted)
 @endcomponent
 @endif

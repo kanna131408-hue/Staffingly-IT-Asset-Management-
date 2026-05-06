@@ -67,5 +67,5 @@ return [
         'checkbox' => 'Afkrydsningsfelt',
         'radio' => 'Drejeknapper',
     ],
-    'general_help_text' => 'Tilpassede felter gemmer yderligere informationer, som ikke er omfattet af standard aktivfelterne. <a href="https://snipe-it.readme.io/docs/custom-fields#/"><i class="fa fa-external-link"></i></a>.',
+    'general_help_text' => 'Tilpassede felter gemmer yderligere informationer, som ikke er omfattet af standard aktivfelterne. <a href="https://staffingly.readme.io/docs/custom-fields#/"><i class="fa fa-external-link"></i></a>.',
 ];

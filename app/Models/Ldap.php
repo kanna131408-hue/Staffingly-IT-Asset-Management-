@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Crypt;
  * into its guts. While that conflates this model with the User model, I think having the appropriate logic for
  * turning LDAP people into Users ought to belong here, so it's easier on the consumer of this class.
  *
- * We're probably going to have to eventually make it so that Snipe-IT users can define multiple LDAP servers,
+ * We're probably going to have to eventually make it so that Staffingly users can define multiple LDAP servers,
  * and having this as a more instance-oriented class will be a step in the right direction.
  ***********************************************/
 

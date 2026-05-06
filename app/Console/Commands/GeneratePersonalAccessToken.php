@@ -15,7 +15,7 @@ class GeneratePersonalAccessToken extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:make-api-key 
+    protected $signature = 'staffingly:make-api-key 
                         {--user_id= : The ID of the user to create the token for.}
                         {--name= : The name of the new API token}
                         {--key-only : Only return the value of the API key}';
@@ -25,7 +25,7 @@ class GeneratePersonalAccessToken extends Command
      *
      * @var string
      */
-    protected $description = 'This console command allows you to generate Personal API tokens to be used with the Snipe-IT JSON REST API on behalf of a user.';
+    protected $description = 'This console command allows you to generate Personal API tokens to be used with the Staffingly JSON REST API on behalf of a user.';
 
 
     /**

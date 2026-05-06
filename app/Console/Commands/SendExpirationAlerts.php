@@ -18,7 +18,7 @@ class SendExpirationAlerts extends Command
  *
      * @var string
      */
-    protected $signature = 'snipeit:expiring-alerts {--expired-licenses}';
+    protected $signature = 'staffingly:expiring-alerts {--expired-licenses}';
 
     /**
      * The console command description.

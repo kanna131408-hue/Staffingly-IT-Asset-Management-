@@ -11,7 +11,7 @@ use \Illuminate\Contracts\View\View;
 
 /**
  * This controller handles all actions related to Status Labels for
- * the Snipe-IT Asset Management application.
+ * the Staffingly Asset Management application.
  *
  * @version    v1.0
  */

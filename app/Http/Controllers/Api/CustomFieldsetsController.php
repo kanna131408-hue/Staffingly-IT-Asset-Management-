@@ -13,7 +13,7 @@ use Illuminate\Http\JsonResponse;
 
 /**
  * This controller handles all actions related to Custom Asset Fieldsets for
- * the Snipe-IT Asset Management application.
+ * the Staffingly Asset Management application.
  *
  * @todo Improve documentation here.
  * @todo Check for raw DB queries and try to convert them to query builder statements

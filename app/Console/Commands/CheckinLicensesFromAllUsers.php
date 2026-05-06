@@ -15,7 +15,7 @@ class CheckinLicensesFromAllUsers extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:checkin-from-all {--license_id=} {--notify}';
+    protected $signature = 'staffingly:checkin-from-all {--license_id=} {--notify}';
 
     /**
      * The console command description.

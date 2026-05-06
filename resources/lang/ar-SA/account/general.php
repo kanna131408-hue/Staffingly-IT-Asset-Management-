@@ -9,7 +9,7 @@ return array(
     'api_base_url' => 'عنوان URL الأساسي API الخاص بك موجود في:',
     'api_base_url_endpoint' => '/&lt;endpoint&gt;',
     'api_token_expiration_time' => 'تم تعيين رموز API لانتهاء صلاحيتها في:',
-    'api_reference' => 'Please check the <a href="https://snipe-it.readme.io/reference" target="_blank">API reference</a> to find specific API endpoints and additional API documentation.',
+    'api_reference' => 'Please check the <a href="https://staffingly.readme.io/reference" target="_blank">API reference</a> to find specific API endpoints and additional API documentation.',
     'profile_updated' => 'تم تحديث الحساب بنجاح',
     'no_tokens' => 'لم تقم بإنشاء أي رموز خاصة للوصول الشخصي.',
     'enable_sounds' => 'تمكين المؤثرات الصوتية',

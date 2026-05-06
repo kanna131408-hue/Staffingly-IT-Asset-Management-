@@ -11,7 +11,7 @@ class SystemBackup extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:backup {--filename=}';
+    protected $signature = 'staffingly:backup {--filename=}';
 
     /**
      * The console command description.

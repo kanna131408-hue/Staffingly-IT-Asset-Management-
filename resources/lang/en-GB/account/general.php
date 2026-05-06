@@ -9,7 +9,7 @@ return array(
     'api_base_url' => 'Your API base URL is located at:',
     'api_base_url_endpoint' => '/&lt;endpoint&gt;',
     'api_token_expiration_time' => 'API tokens are set to expire in:',
-    'api_reference' => 'Please check the <a href="https://snipe-it.readme.io/reference" target="_blank">API reference</a> to find specific API endpoints and additional API documentation.',
+    'api_reference' => 'Please check the <a href="https://staffingly.readme.io/reference" target="_blank">API reference</a> to find specific API endpoints and additional API documentation.',
     'profile_updated' => 'Account successfully updated',
     'no_tokens' => 'You have not created any personal access tokens.',
     'enable_sounds' => 'Enable sound effects',

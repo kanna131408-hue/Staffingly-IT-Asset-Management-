@@ -9,7 +9,7 @@ return array(
     'api_base_url' => 'URL-ul de bază API este localizat la:',
     'api_base_url_endpoint' => '/&lt;endpoint&gt;',
     'api_token_expiration_time' => 'Token-urile API sunt setate să expire în:',
-    'api_reference' => 'Please check the <a href="https://snipe-it.readme.io/reference" target="_blank">API reference</a> to find specific API endpoints and additional API documentation.',
+    'api_reference' => 'Please check the <a href="https://staffingly.readme.io/reference" target="_blank">API reference</a> to find specific API endpoints and additional API documentation.',
     'profile_updated' => 'Account successfully updated',
     'no_tokens' => 'You have not created any personal access tokens.',
     'enable_sounds' => 'Enable sound effects',

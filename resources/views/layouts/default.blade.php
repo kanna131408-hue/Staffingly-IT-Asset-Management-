@@ -960,7 +960,7 @@
 
 
     <script nonce="{{ csrf_token() }}">
-        window.snipeit = {
+        window.staffingly = {
             settings: {
                 "per_page": {{ $snipeSettings->per_page }}
             }
@@ -1794,10 +1794,10 @@
                     <div class="pull-left footer-links">
                          {!! trans('general.footer_credit') !!}
 
-                        <a target="_blank" href="https://bsky.app/profile/snipeitapp.com" rel="noopener" data-tooltip="true" data-title="Join us on Bluesky">
+                        <a target="_blank" href="https://bsky.app/profile/staffinglyapp.com" rel="noopener" data-tooltip="true" data-title="Join us on Bluesky">
                             <i class="fa-brands fa-square-bluesky fa-fw"></i>
                         </a>
-                        <a target="_blank" href="https://github.com/grokability/snipe-it/" rel="noopener" data-tooltip="true" data-title="Join us on Github">
+                        <a target="_blank" href="https://github.com/grokability/staffingly/" rel="noopener" data-tooltip="true" data-title="Join us on Github">
                             <i class="fa-brands fa-square-github fa-fw"></i>
                         </a>
                         <a target="_blank" href="https://hachyderm.io/@grokability" rel="noopener" data-tooltip="true" data-title="Join us on Mastodon">
@@ -1826,9 +1826,9 @@
                     @if ($snipeSettings->support_footer!='off')
                         @if (($snipeSettings->support_footer=='on') || (($snipeSettings->support_footer=='admin') && (Auth::user()->isSuperUser()=='1')))
                             <a target="_blank" class="label label-default"
-                               href="https://snipe-it.readme.io/docs/overview"
+                               href="https://staffingly.readme.io/docs/overview"
                                rel="noopener">{{ trans('general.user_manual') }}</a>
-                            <a target="_blank" class="label label-default" href="https://snipeitapp.com/support/"
+                            <a target="_blank" class="label label-default" href="https://staffinglyapp.com/support/"
                                rel="noopener">{{ trans('general.bug_report') }}</a>
                         @endif
                     @endif

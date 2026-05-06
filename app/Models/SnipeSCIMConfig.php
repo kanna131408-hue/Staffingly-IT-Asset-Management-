@@ -15,7 +15,7 @@ class SnipeSCIMConfig extends \ArieTimmerman\Laravel\SCIMServer\SCIMConfig
         // Much of this is copied verbatim from the library, then adjusted for our needs
 
         /*
-          more snipe-it attributes I'd like to check out (to map to 'enterprise' maybe?):
+          more staffingly attributes I'd like to check out (to map to 'enterprise' maybe?):
          - website
          - notes?
          - remote???

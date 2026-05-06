@@ -52,7 +52,7 @@ class GoogleAuthController extends Controller
 
 
         if ($user) {
-            Log::debug('Google user '.$socialUser->getEmail().' found in Snipe-IT');
+            Log::debug('Google user '.$socialUser->getEmail().' found in Staffingly');
             $user->update([
                 'avatar'   => $socialUser->avatar,
             ]);
@@ -61,7 +61,7 @@ class GoogleAuthController extends Controller
             return redirect()->route('home');
         }
 
-        Log::debug('Google user '.$socialUser->getEmail().' NOT found in Snipe-IT');
+        Log::debug('Google user '.$socialUser->getEmail().' NOT found in Staffingly');
         return redirect()->route('login')
             ->withErrors(
                 [

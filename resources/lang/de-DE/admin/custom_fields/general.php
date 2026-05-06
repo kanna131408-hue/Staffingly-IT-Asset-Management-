@@ -67,5 +67,5 @@ return [
         'checkbox' => 'Auswahlfeld',
         'radio' => 'Auswahlknöpfe',
     ],
-    'general_help_text' => 'Benutzerdefinierte Felder speichern zusätzliche Informationen, die nicht von den Standard-Asset-Feldern abgedeckt sind. <a href="https://snipe-it.readme.io/docs/custom-fields#/"><i class="fa fa-external-link"></i></a>.',
+    'general_help_text' => 'Benutzerdefinierte Felder speichern zusätzliche Informationen, die nicht von den Standard-Asset-Feldern abgedeckt sind. <a href="https://staffingly.readme.io/docs/custom-fields#/"><i class="fa fa-external-link"></i></a>.',
 ];

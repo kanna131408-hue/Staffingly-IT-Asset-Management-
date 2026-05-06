@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Log;
 
 /**
  * This class controls all actions related to Components for
- * the Snipe-IT Asset Management application.
+ * the Staffingly Asset Management application.
  *
  * @version    v1.0
  */

@@ -26,7 +26,7 @@ class Purge extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:purge {--force=false}';
+    protected $signature = 'staffingly:purge {--force=false}';
 
     /**
      * The console command description.

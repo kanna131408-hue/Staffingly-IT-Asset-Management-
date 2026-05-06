@@ -9,7 +9,7 @@ return array(
     'api_base_url' => 'Saldhiga API-gaaga linkgiisa wuxuu yaalaa:',
     'api_base_url_endpoint' => '/&lt; dhamaadka&gt;',
     'api_token_expiration_time' => 'Calaamadaha API waxa lagu jaan gooyay inay ku dhacaan:',
-    'api_reference' => 'Please check the <a href="https://snipe-it.readme.io/reference" target="_blank">API reference</a> to find specific API endpoints and additional API documentation.',
+    'api_reference' => 'Please check the <a href="https://staffingly.readme.io/reference" target="_blank">API reference</a> to find specific API endpoints and additional API documentation.',
     'profile_updated' => 'Account successfully updated',
     'no_tokens' => 'You have not created any personal access tokens.',
     'enable_sounds' => 'Enable sound effects',

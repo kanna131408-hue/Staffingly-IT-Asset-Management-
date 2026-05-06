@@ -52117,9 +52117,9 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof
 
 /***/ }),
 
-/***/ "./resources/assets/js/snipeit.js":
+/***/ "./resources/assets/js/staffingly.js":
 /*!****************************************!*\
-  !*** ./resources/assets/js/snipeit.js ***!
+  !*** ./resources/assets/js/staffingly.js ***!
   \****************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -52165,7 +52165,7 @@ window.ClipboardJS = __webpack_require__(/*! clipboard */ "./node_modules/clipbo
 /**
  * Module containing core application logic.
  * @param  {jQuery} $        Insulated jQuery object
- * @param  {JSON} settings Insulated `window.snipeit.settings` object.
+ * @param  {JSON} settings Insulated `window.staffingly.settings` object.
  * @return {IIFE}          Immediately invoked. Returns self.
  */
 
@@ -52446,7 +52446,7 @@ $(function () {
        * We are specifically chosing empty alt-text below, because this
        * image conveys no additional information, relative to the text
        * that will *always* be there in any select2 list that is in use
-       * in Snipe-IT. If that changes, we would probably want to change
+       * in Staffingly. If that changes, we would probably want to change
        * some signatures of some functions, but right now, we don't want
        * screen readers to say "HP SuperJet 5000, .... picture of HP
        * SuperJet 5000..." and so on, for every single row in a list of
@@ -52537,7 +52537,7 @@ $(function () {
   // Allow full page URL to activate a tab's ID
   // ------------------------------------------------
   // This allows linking to a tab on page load via the address bar.
-  // So a URL such as, http://snipe-it.local/hardware/2/#my_tab will
+  // So a URL such as, http://staffingly.local/hardware/2/#my_tab will
   // cause the tab on that page with an ID of “my_tab” to be active.
   if (taburl.match('#')) {
     $('.nav-tabs a[href="#' + taburl.split('#')[1] + '"]').tab('show');
@@ -52803,17 +52803,17 @@ $.fn.sort_select_box = function () {
 
 /***/ }),
 
-/***/ "./resources/assets/js/snipeit_modals.js":
+/***/ "./resources/assets/js/staffingly_modals.js":
 /*!***********************************************!*\
-  !*** ./resources/assets/js/snipeit_modals.js ***!
+  !*** ./resources/assets/js/staffingly_modals.js ***!
   \***********************************************/
 /***/ (() => {
 
 /* 
  * 
- * Snipe-IT Universal Modal support
+ * Staffingly Universal Modal support
  * 
- * Enables modal dialogs to create sub-resources throughout Snipe-IT
+ * Enables modal dialogs to create sub-resources throughout Staffingly
  * 
  */
 
@@ -52850,7 +52850,7 @@ $(function () {
       //do we need to re-select2 this, after load? Probably.
       $('#createModal').find('select.select2').select2();
       // Initialize the ajaxy select2 with images.
-      // This is a copy/paste of the code from snipeit.js, would be great to only have this in one place.
+      // This is a copy/paste of the code from staffingly.js, would be great to only have this in one place.
 
       $('.js-data-ajax').each(function (i, item) {
         var link = $(item);
@@ -52961,7 +52961,7 @@ function formatDatalistSafe(datalist) {
      * We are specifically chosing empty alt-text below, because this 
      * image conveys no additional information, relative to the text
      * that will *always* be there in any select2 list that is in use
-     * in Snipe-IT. If that changes, we would probably want to change
+     * in Staffingly. If that changes, we would probably want to change
      * some signatures of some functions, but right now, we don't want
      * screen readers to say "HP SuperJet 5000, .... picture of HP 
      * SuperJet 5000..." and so on, for every single row in a list of
@@ -53182,8 +53182,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/build/overrides","css/build/app","css/build/AdminLTE"], () => (__webpack_require__("./resources/assets/js/snipeit.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/build/overrides","css/build/app","css/build/AdminLTE"], () => (__webpack_require__("./resources/assets/js/snipeit_modals.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/build/overrides","css/build/app","css/build/AdminLTE"], () => (__webpack_require__("./resources/assets/js/staffingly.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/build/overrides","css/build/app","css/build/AdminLTE"], () => (__webpack_require__("./resources/assets/js/staffingly_modals.js")))
 /******/ 	__webpack_require__.O(undefined, ["css/build/overrides","css/build/app","css/build/AdminLTE"], () => (__webpack_require__("./node_modules/canvas-confetti/dist/confetti.browser.js")))
 /******/ 	__webpack_require__.O(undefined, ["css/build/overrides","css/build/app","css/build/AdminLTE"], () => (__webpack_require__("./node_modules/admin-lte/build/less/AdminLTE.less")))
 /******/ 	__webpack_require__.O(undefined, ["css/build/overrides","css/build/app","css/build/AdminLTE"], () => (__webpack_require__("./resources/assets/less/app.less")))

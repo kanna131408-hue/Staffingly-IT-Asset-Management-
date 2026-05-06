@@ -13,7 +13,7 @@ class SendCurrentInventoryToUsers extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:user-inventory';
+    protected $signature = 'staffingly:user-inventory';
 
     /**
      * The console command description.

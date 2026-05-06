@@ -25,7 +25,7 @@
         <label for="site_name">
           {{ trans('general.site_name') }}
         </label>
-        <input class="form-control" placeholder="Snipe-IT Asset Management" required="" name="site_name" type="text" value="{{ old('site_name') }}">
+        <input class="form-control" placeholder="Staffingly Asset Management" required="" name="site_name" type="text" value="{{ old('site_name') }}">
 
         {!! $errors->first('site_name', '<span class="alert-msg" aria-hidden="true">:message</span>') !!}
       </div>

@@ -8,7 +8,7 @@ return array(
     'default_label' => 'Varsayılan Etiket',
     'default_label_help' => 'En sık kullanılan durum etiketlerinin varlık oluştururken / düzenlerken seçim kutusunun üstünde görünmesini sağlamak için kullanılır.',
     'deployable'      	=> 'Dağıtılabilir',
-    'info'      	=> 'Durum etiketi türleri, varlıklarınızın içinde bulunabileceği çeşitli durumları tanımlamak için kullanılır. Onarım için dışarıda, kayıp/çalıntı vb. olabilirler. Dağıtılabilir, bekleyen ve arşivlenen varlıklarınız için kendi iş akışınıza göre yeni durum etiketleri oluşturabilirsiniz. Daha fazla bilgi için <a href="https://snipe-it.readme.io/docs/overview#status-labels" target="_blank">belgelere bakın <i class="fa fa-external-link"></i></a>.',
+    'info'      	=> 'Durum etiketi türleri, varlıklarınızın içinde bulunabileceği çeşitli durumları tanımlamak için kullanılır. Onarım için dışarıda, kayıp/çalıntı vb. olabilirler. Dağıtılabilir, bekleyen ve arşivlenen varlıklarınız için kendi iş akışınıza göre yeni durum etiketleri oluşturabilirsiniz. Daha fazla bilgi için <a href="https://staffingly.readme.io/docs/overview#status-labels" target="_blank">belgelere bakın <i class="fa fa-external-link"></i></a>.',
     'name'      	=> 'Durum Adı',
     'pending'      	=> 'Beklemede',
     'status_type'   => 'Durum Türü',

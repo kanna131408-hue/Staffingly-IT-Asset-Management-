@@ -1409,8 +1409,8 @@
 
 
                 // Check if it's a custom field
-                if (index.startsWith('_snipeit_')) {
-                    pretty_index = index.replace("_snipeit_", "Custom:_");
+                if (index.startsWith('_staffingly_')) {
+                    pretty_index = index.replace("_staffingly_", "Custom:_");
                 } else {
                     pretty_index = index;
                 }

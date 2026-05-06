@@ -67,5 +67,5 @@ return [
         'checkbox' => '复选框',
         'radio' => '单选按钮',
     ],
-    'general_help_text' => '自定义字段用于存储默认资产字段中不包含的附加信息。<a href="https://snipe-it.readme.io/docs/custom-fields#/"><i class="fa fa-external-link"></i></a>。',
+    'general_help_text' => '自定义字段用于存储默认资产字段中不包含的附加信息。<a href="https://staffingly.readme.io/docs/custom-fields#/"><i class="fa fa-external-link"></i></a>。',
 ];

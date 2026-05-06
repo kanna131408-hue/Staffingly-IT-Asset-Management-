@@ -36,7 +36,7 @@ trait MayContainCustomFields
         // collect the custom fields in the request
         $validator->after(function ($validator) use ($asset_model) {
             $request_fields = $this->collect()->keys()->filter(function ($attributes) {
-                return str_starts_with($attributes, '_snipeit_');
+                return str_starts_with($attributes, '_staffingly_');
             });
 
             // if there are custom fields, find the ones that don't exist on the model's fieldset and add an error to the validator's error bag

@@ -22,7 +22,7 @@ use App\Notifications\CurrentInventory;
 
 /**
  * This controller handles all actions related to Users for
- * the Snipe-IT Asset Management application.
+ * the Staffingly Asset Management application.
  *
  * @version    v1.0
  */

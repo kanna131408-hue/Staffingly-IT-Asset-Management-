@@ -19,27 +19,27 @@
     <div class="col-md-12">
 
         <p>
-            If you're already familiar with Snipe-IT, you can get started right away by <strong><a href="{{ config('app.url') }}">heading right to your dashboard</a></strong>, or if it's your first time using Snipe-IT, you can check out some of the useful resources below:
+            If you're already familiar with Staffingly, you can get started right away by <strong><a href="{{ config('app.url') }}">heading right to your dashboard</a></strong>, or if it's your first time using Staffingly, you can check out some of the useful resources below:
         </p>
         <div class="well well-sm">
             <div class="row">
                 <div class="col-md-6">
                     <ul>
-                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://snipe-it.readme.io/docs/overview#/" target="_blank">Overview <x-icon type="external-link" /></a></li>
-                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://snipe-it.readme.io/docs/getting-started#/" target="_blank">Getting Started <x-icon type="external-link" /></a></li>
-                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://snipe-it.readme.io/reference/api-overview#/" target="_blank">API Documentation <x-icon type="external-link" /></a></li>
-                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://snipe-it.readme.io/docs/importing-users#/" target="_blank">Importing Users <x-icon type="external-link" /></a></li>
-                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://snipe-it.readme.io/docs/importing-assets#/" target="_blank">Importing Assets <x-icon type="external-link" /></a></li>
+                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://staffingly.readme.io/docs/overview#/" target="_blank">Overview <x-icon type="external-link" /></a></li>
+                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://staffingly.readme.io/docs/getting-started#/" target="_blank">Getting Started <x-icon type="external-link" /></a></li>
+                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://staffingly.readme.io/reference/api-overview#/" target="_blank">API Documentation <x-icon type="external-link" /></a></li>
+                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://staffingly.readme.io/docs/importing-users#/" target="_blank">Importing Users <x-icon type="external-link" /></a></li>
+                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://staffingly.readme.io/docs/importing-assets#/" target="_blank">Importing Assets <x-icon type="external-link" /></a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-6">
                     <ul>
-                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://snipe-it.readme.io/reference/api-overview#/" target="_blank">API Documentation <x-icon type="external-link" /></a></li>
-                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://snipe-it.readme.io/docs/saml#/" target="_blank">SAML Authentication<x-icon type="external-link" /></a></li>
-                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://snipe-it.readme.io/docs/scim#/" target="_blank">SCIM <x-icon type="external-link" /></a></li>
-                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://snipe-it.readme.io/docs/ldap-sync-login#/" target="_blank">LDAP Sync &amp; Login <x-icon type="external-link" /></a></li>
-                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://snipe-it.readme.io/docs/webhook-integration#/" target="_blank">Webhooks <x-icon type="external-link" /></a></li>
+                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://staffingly.readme.io/reference/api-overview#/" target="_blank">API Documentation <x-icon type="external-link" /></a></li>
+                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://staffingly.readme.io/docs/saml#/" target="_blank">SAML Authentication<x-icon type="external-link" /></a></li>
+                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://staffingly.readme.io/docs/scim#/" target="_blank">SCIM <x-icon type="external-link" /></a></li>
+                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://staffingly.readme.io/docs/ldap-sync-login#/" target="_blank">LDAP Sync &amp; Login <x-icon type="external-link" /></a></li>
+                        <li><i class="fa-solid fa-book fa-fw"></i> <a href="https://staffingly.readme.io/docs/webhook-integration#/" target="_blank">Webhooks <x-icon type="external-link" /></a></li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +53,7 @@
 
             <p>
                 If you plan on using SCIM or LDAP syncing to keep your user lists up to date with your directory services,
-                make sure the username format for any users imported via CSV matches your directory service username format to avoid duplicating users in Snipe-IT.
+                make sure the username format for any users imported via CSV matches your directory service username format to avoid duplicating users in Staffingly.
             </p>
         </div>
 
@@ -62,9 +62,9 @@
         </p>
 
             <ul>
-                <li><i class="fa-brands fa-github fa-fw"></i> <a href="https://github.com/grokability/snipe-it" target="_blank">Github <x-icon type="external-link" /></a></li>
+                <li><i class="fa-brands fa-github fa-fw"></i> <a href="https://github.com/grokability/staffingly" target="_blank">Github <x-icon type="external-link" /></a></li>
                 <li><i class="fa-brands fa-discord fa-fw"></i> <a href="https://discord.gg/yZFtShAcKk" target="_blank">Discord <x-icon type="external-link" /></a></li>
-                <li><i class="fa-brands fa-bluesky fa-fw"></i> <a href="https://bsky.app/profile/snipeitapp.com" target="_blank">Bluesky <x-icon type="external-link" /></a></li>
+                <li><i class="fa-brands fa-bluesky fa-fw"></i> <a href="https://bsky.app/profile/staffinglyapp.com" target="_blank">Bluesky <x-icon type="external-link" /></a></li>
                 <li><i class="fa-brands fa-mastodon fa-fw"></i> <a href="https://hachyderm.io/@grokability" target="_blank">Mastodon <x-icon type="external-link" /></a></li>
                 <li><i class="fa-solid fa-square-rss fa-fw"></i> Our blog at <a href="https://grokstar.dev" target="_blank">Grokstar.Dev <x-icon type="external-link" /></a></li>
             </ul>

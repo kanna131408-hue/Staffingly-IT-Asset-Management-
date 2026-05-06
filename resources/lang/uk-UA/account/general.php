@@ -10,7 +10,7 @@ return array(
     'api_base_url' => 'Ваша базова URL-адреса API:',
     'api_base_url_endpoint' => '/&lt;ресурс&gt;',
     'api_token_expiration_time' => 'API токени закінчуються:',
-    'api_reference' => 'Будь ласка, перевірте <a href="https://snipe-it.readme.io/reference" target="_blank">довідку по API</a>, щоб дізнатись про ресурси API та додаткову документацію стосовно них.',
+    'api_reference' => 'Будь ласка, перевірте <a href="https://staffingly.readme.io/reference" target="_blank">довідку по API</a>, щоб дізнатись про ресурси API та додаткову документацію стосовно них.',
     'profile_updated' => 'Обліковий запис успішно оновлено',
     'no_tokens' => 'Ви не створили жодних особистих токенів доступу.',
     'enable_sounds' => 'Увімкнути звукові ефекти',

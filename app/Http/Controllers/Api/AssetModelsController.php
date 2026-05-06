@@ -17,7 +17,7 @@ use Illuminate\Http\JsonResponse;
 
 /**
  * This class controls all actions related to asset models for
- * the Snipe-IT Asset Management application.
+ * the Staffingly Asset Management application.
  *
  * @version    v4.0
  * @author [A. Gianotto] [<snipe@snipe.net>]

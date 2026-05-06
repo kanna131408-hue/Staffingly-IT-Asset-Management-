@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{{ url(mix('css/dist/all.css')) }}">
 
     <script nonce="{{ csrf_token() }}">
-        window.snipeit = {
+        window.staffingly = {
             settings: {
                 "per_page": 50
             }

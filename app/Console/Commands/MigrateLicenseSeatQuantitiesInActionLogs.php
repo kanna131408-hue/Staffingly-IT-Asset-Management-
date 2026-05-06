@@ -15,7 +15,7 @@ class MigrateLicenseSeatQuantitiesInActionLogs extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:migrate-license-seat-quantities-in-action-logs
+    protected $signature = 'staffingly:migrate-license-seat-quantities-in-action-logs
                             {--no-interaction: Do not ask any interactive question}';
 
     /**

@@ -11,7 +11,7 @@ class KillAllSessions extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:global-logout  {--force : Skip the danger prompt; assuming you enter "y"} ';
+    protected $signature = 'staffingly:global-logout  {--force : Skip the danger prompt; assuming you enter "y"} ';
 
     /**
      * The console command description.

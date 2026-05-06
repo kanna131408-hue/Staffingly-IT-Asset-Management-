@@ -227,7 +227,7 @@ class LoginController extends Controller
 
             $strip_prefixes = [
                 // IIS/AD
-                // https://github.com/grokability/snipe-it/pull/5862
+                // https://github.com/grokability/staffingly/pull/5862
                 '\\',
 
                 // Google Cloud IAP
@@ -374,7 +374,7 @@ class LoginController extends Controller
             $barcode->getBarcodeObj(
                 'QRCODE',
                 sprintf(
-                    'otpauth://totp/%s:%s?secret=%s&issuer=Snipe-IT&period=30',
+                    'otpauth://totp/%s:%s?secret=%s&issuer=Staffingly&period=30',
                     urlencode($settings->site_name),
                     urlencode($user->username),
                     urlencode($secret)

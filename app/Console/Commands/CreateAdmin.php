@@ -27,7 +27,7 @@ class CreateAdmin extends Command
 
 
 
-    protected $signature = 'snipeit:create-admin {--first_name=} {--last_name=}  {--email=}  {--username=}  {--password=} {show_in_list?} {autoassign_licenses?}';
+    protected $signature = 'staffingly:create-admin {--first_name=} {--last_name=}  {--email=}  {--username=}  {--password=} {show_in_list?} {autoassign_licenses?}';
 
     /**
      * The console command description.

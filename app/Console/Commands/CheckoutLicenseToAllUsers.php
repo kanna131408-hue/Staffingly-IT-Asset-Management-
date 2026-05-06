@@ -15,7 +15,7 @@ class CheckoutLicenseToAllUsers extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:checkout-to-all {--license_id=} {--notify}';
+    protected $signature = 'staffingly:checkout-to-all {--license_id=} {--notify}';
 
     /**
      * The console command description.

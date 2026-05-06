@@ -3,11 +3,11 @@
 /**
  * ---------------------------------------------------------------------
  * THIS IS $allowed_origins code IS NOT PART OF THE ORIGINAL CORS PACKAGE.
- * IT IS A MODIFICATION BY SNIPE-IT TO ALLOW ADDING ALLOWED ORIGINS VIA THE ENV.
+ * IT IS A MODIFICATION BY STAFFINGLY TO ALLOW ADDING ALLOWED ORIGINS VIA THE ENV.
  * ---------------------------------------------------------------------
  *
  * Since we don't really want people editing config files (lest they get
- * overwritten later), this enables the person managing the Snipe-IT
+ * overwritten later), this enables the person managing the Staffingly
  * installation to modify these values without modifying the code.
  *
  * If APP_CORS_ALLOWED_ORIGINS is not set in the .env (for example if no one added it

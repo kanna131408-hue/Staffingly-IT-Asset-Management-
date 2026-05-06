@@ -12,7 +12,7 @@ class NormalizeUserNames extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:normalize-names';
+    protected $signature = 'staffingly:normalize-names';
 
     /**
      * The console command description.

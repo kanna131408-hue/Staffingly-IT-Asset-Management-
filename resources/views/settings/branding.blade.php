@@ -61,12 +61,12 @@
                                 <label for="site_name" class="col-md-3 control-label">{{ trans('admin/settings/general.site_name') }}</label>
                                 <div class="col-md-8 required">
                                     @if (config('app.lock_passwords')===true)
-                                        <input maxlength="191" class="form-control" disabled="disabled" placeholder="Snipe-IT Asset Management" name="site_name" type="text" value="{{ old('site_name', $setting->site_name) }}" id="site_name">
+                                        <input maxlength="191" class="form-control" disabled="disabled" placeholder="Staffingly Asset Management" name="site_name" type="text" value="{{ old('site_name', $setting->site_name) }}" id="site_name">
                                         <p class="text-warning">
                                             <x-icon type="locked" />
                                             {{ trans('general.feature_disabled') }}</p>
                                     @else
-                                        <input maxlength="191" class="form-control" placeholder="Snipe-IT Asset Management" required="required" name="site_name" type="text" value="{{ old('site_name', $setting->site_name) }}" id="site_name">
+                                        <input maxlength="191" class="form-control" placeholder="Staffingly Asset Management" required="required" name="site_name" type="text" value="{{ old('site_name', $setting->site_name) }}" id="site_name">
                                     @endif
                                     {!! $errors->first('site_name', '<span class="alert-msg" aria-hidden="true">:message</span>') !!}
                                 </div>

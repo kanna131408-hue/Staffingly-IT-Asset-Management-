@@ -14,7 +14,7 @@ use \Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Log;
 
 /** This controller handles all actions related to Accessories for
- * the Snipe-IT Asset Management application.
+ * the Staffingly Asset Management application.
  *
  * @version    v1.0
  */

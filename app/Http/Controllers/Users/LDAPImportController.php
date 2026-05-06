@@ -50,7 +50,7 @@ class LDAPImportController extends Controller
         $this->authorize('update', User::class);
         // Call Artisan LDAP import command.
 
-        Artisan::call('snipeit:ldap-sync', ['--location_id' => $request->input('location_id'), '--json_summary' => true]);
+        Artisan::call('staffingly:ldap-sync', ['--location_id' => $request->input('location_id'), '--json_summary' => true]);
 
         // Collect and parse JSON summary.
         $ldap_results_json = Artisan::output();

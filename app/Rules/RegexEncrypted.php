@@ -23,7 +23,7 @@ class RegexEncrypted implements ValidationRule
         $regex = $field->format;
         $regex = str_replace('regex:', '', $regex);
         try {
-            $attributeName = trim(preg_replace('/_+|snipeit|\d+/', ' ', $attribute));
+            $attributeName = trim(preg_replace('/_+|staffingly|\d+/', ' ', $attribute));
             $decrypted = Crypt::decrypt($value);
             if (!$this->validateRegex($attributeName, $decrypted, [$regex]) && !is_null($decrypted)) {
                 $fail(trans('validation.regex', ['attribute' => $attributeName]));

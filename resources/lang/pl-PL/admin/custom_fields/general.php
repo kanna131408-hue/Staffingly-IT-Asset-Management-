@@ -67,5 +67,5 @@ return [
         'checkbox' => 'Checkbox',
         'radio' => 'Radio Buttons',
     ],
-    'general_help_text' => 'Pola niestandardowe przechowują informacje, które nie są ujęte w domyślnie dostępnych polach. <a href="https://snipe-it.readme.io/docs/custom-fields#/"><i class="fa fa-external-link"></i></a>.',
+    'general_help_text' => 'Pola niestandardowe przechowują informacje, które nie są ujęte w domyślnie dostępnych polach. <a href="https://staffingly.readme.io/docs/custom-fields#/"><i class="fa fa-external-link"></i></a>.',
 ];

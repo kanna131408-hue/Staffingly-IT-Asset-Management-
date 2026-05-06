@@ -14,14 +14,14 @@ class ResetDemoSettings extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:demo-settings';
+    protected $signature = 'staffingly:demo-settings';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'This will reset the Snipe-IT demo settings back to default. ';
+    protected $description = 'This will reset the Staffingly demo settings back to default. ';
 
     /**
      * Create a new command instance.
@@ -44,10 +44,10 @@ class ResetDemoSettings extends Command
         $this->info('Resetting the demo settings.');
         $settings = Setting::first();
         $settings->per_page = 20;
-        $settings->site_name = 'Snipe-IT Asset Management Demo';
+        $settings->site_name = 'Staffingly Asset Management Demo';
         $settings->auto_increment_assets = 1;
         $settings->logo = 'snipe-logo.png';
-        $settings->alert_email = 'service@snipe-it.io';
+        $settings->alert_email = 'service@staffingly.io';
         $settings->login_note = 'Use `admin` / `password` to login to the demo.';
         $settings->header_color = '#3c8dbc';
         $settings->link_dark_color = '#5fa4cc';
@@ -58,7 +58,7 @@ class ResetDemoSettings extends Command
         $settings->ldap_enabled = 0;
         $settings->full_multiple_companies_support = 0;
         $settings->label2_1d_type = 'C128';
-        $settings->email_domain = 'snipeitapp.com';
+        $settings->email_domain = 'staffinglyapp.com';
         $settings->email_format = 'filastname';
         $settings->username_format = 'filastname';
         $settings->date_display_format = 'D M d, Y';

@@ -34,7 +34,7 @@ use \Illuminate\Contracts\View\View;
 
 /**
  * This controller handles all actions related to Settings for
- * the Snipe-IT Asset Management application.
+ * the Staffingly Asset Management application.
  *
  * @version    v1.0
  */
@@ -196,7 +196,7 @@ class SettingsController extends Controller
             $setting->link_dark_color = $request->input('link_dark_color', '#296282');
             $setting->nav_link_color = $request->input('nav_link_color', '#FFFFFF');
             
-            $setting->site_name = $request->input('site_name', 'Snipe-IT');
+            $setting->site_name = $request->input('site_name', 'Staffingly');
             $setting->custom_css = $request->input('custom_css');
 
             // Logo upload
@@ -835,7 +835,7 @@ class SettingsController extends Controller
     public function postBackups() : RedirectResponse
     {
         if (! config('app.lock_passwords')) {
-            Artisan::call('snipeit:backup', ['--filename' => 'manual-backup-'.date('Y-m-d-H-i-s')]);
+            Artisan::call('staffingly:backup', ['--filename' => 'manual-backup-'.date('Y-m-d-H-i-s')]);
             $output = Artisan::output();
 
             // Backup completed
@@ -987,7 +987,7 @@ class SettingsController extends Controller
 
                 if ($request->input('clean')) {
                     Log::debug("Attempting 'clean' - first, guessing prefix...");
-                    Artisan::call('snipeit:restore', [
+                    Artisan::call('staffingly:restore', [
                         '--sanitize-guess-prefix' => true,
                         'filename' => storage_path($path) . '/' . $filename
                     ]);
@@ -999,7 +999,7 @@ class SettingsController extends Controller
                 }
 
                 // run the restore command
-                Artisan::call('snipeit:restore',
+                Artisan::call('staffingly:restore',
                     $restore_params
                 );
 
@@ -1023,7 +1023,7 @@ class SettingsController extends Controller
                 }
 
                 Log::debug('Logging all users out..');
-                Artisan::call('snipeit:global-logout', ['--force' => true]);
+                Artisan::call('staffingly:global-logout', ['--force' => true]);
 
                 DB::table('users')->update(['remember_token' => null]);
                 Auth::logout();
@@ -1076,7 +1076,7 @@ class SettingsController extends Controller
                     Log::warning('User ID ' . auth()->id() . ' initiated a PURGE!');
                     // Run a backup immediately before processing
                     Artisan::call('backup:run');
-                    Artisan::call('snipeit:purge', ['--force' => 'true', '--no-interaction' => true]);
+                    Artisan::call('staffingly:purge', ['--force' => 'true', '--no-interaction' => true]);
                     $output = Artisan::output();
 
                     return redirect()->route('settings.index')

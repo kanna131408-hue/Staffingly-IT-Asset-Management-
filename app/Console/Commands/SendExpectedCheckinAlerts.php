@@ -19,7 +19,7 @@ class SendExpectedCheckinAlerts extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:expected-checkin {--with-output : Display the results in a table in your console in addition to sending the email}';
+    protected $signature = 'staffingly:expected-checkin {--with-output : Display the results in a table in your console in addition to sending the email}';
 
     /**
      * The console command description.

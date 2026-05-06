@@ -20,7 +20,7 @@ use \Illuminate\Contracts\View\View;
 
 /**
  * This class controls all actions related to Categories for
- * the Snipe-IT Asset Management application.
+ * the Staffingly Asset Management application.
  *
  * @version    v1.0
  * @author [A. Gianotto] [<snipe@snipe.net>]

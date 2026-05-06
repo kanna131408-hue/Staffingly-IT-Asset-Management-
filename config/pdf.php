@@ -6,7 +6,7 @@ return [
     'author'                => '',
     'subject'               => '',
     'keywords'              => '',
-    'creator'               => 'Snipe-IT',
+    'creator'               => 'Staffingly',
     'display_mode'          => 'fullpage',
     'tempDir'               => base_path('../temp/'),
     'pdf_a'                 => false,

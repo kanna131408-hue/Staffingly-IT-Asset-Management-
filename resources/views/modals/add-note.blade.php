@@ -1,4 +1,4 @@
-{{-- See snipeit_modals.js for what powers this --}}
+{{-- See staffingly_modals.js for what powers this --}}
 <div class="modal fade" id="createNoteModal" tabindex="-1" role="dialog" aria-labelledby="createNoteModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">

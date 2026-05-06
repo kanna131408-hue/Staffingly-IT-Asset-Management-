@@ -9,7 +9,7 @@ return array(
     'api_base_url' => 'URL basis API Anda terletak di:',
     'api_base_url_endpoint' => '/&lt;endpoint&gt;',
     'api_token_expiration_time' => 'Token API disetel kedaluwarsa dalam:',
-    'api_reference' => 'Silakan periksa <a href="https://snipe-it.readme.io/reference" target="_blank">referensi API</a> untuk menemukan titik akhir API spesifik dan dokumentasi API tambahan.',
+    'api_reference' => 'Silakan periksa <a href="https://staffingly.readme.io/reference" target="_blank">referensi API</a> untuk menemukan titik akhir API spesifik dan dokumentasi API tambahan.',
     'profile_updated' => 'Akun berhasil diperbarui',
     'no_tokens' => 'Anda belum membuat token akses pribadi.',
     'enable_sounds' => 'Aktifkan efek suara',

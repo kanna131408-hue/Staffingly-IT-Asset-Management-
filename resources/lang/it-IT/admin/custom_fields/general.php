@@ -67,5 +67,5 @@ return [
         'checkbox' => 'Casella di spunta',
         'radio' => 'Pulsanti di opzione',
     ],
-    'general_help_text' => 'I campi personalizzati memorizzano informazioni aggiuntive non coperte dai campi predefiniti del Bene. <a href="https://snipe-it.readme.io/docs/custom-fields#/"><i class="fa fa-external-link"></i></a>.',
+    'general_help_text' => 'I campi personalizzati memorizzano informazioni aggiuntive non coperte dai campi predefiniti del Bene. <a href="https://staffingly.readme.io/docs/custom-fields#/"><i class="fa fa-external-link"></i></a>.',
 ];

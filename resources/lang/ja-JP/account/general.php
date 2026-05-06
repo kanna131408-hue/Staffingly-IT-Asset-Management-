@@ -9,7 +9,7 @@ return array(
     'api_base_url' => 'APIベースURLは以下の場所です:',
     'api_base_url_endpoint' => '/<エンドポイント>',
     'api_token_expiration_time' => 'APIトークンの有効期限:',
-    'api_reference' => 'Please check the <a href="https://snipe-it.readme.io/reference" target="_blank">API reference</a> to find specific API endpoints and additional API documentation.',
+    'api_reference' => 'Please check the <a href="https://staffingly.readme.io/reference" target="_blank">API reference</a> to find specific API endpoints and additional API documentation.',
     'profile_updated' => 'Account successfully updated',
     'no_tokens' => 'You have not created any personal access tokens.',
     'enable_sounds' => '効果音を有効にする',

@@ -9,7 +9,7 @@ return array(
     'api_base_url' => 'Địa chỉ URL gốc API của bạn được đặt tại:',
     'api_base_url_endpoint' => '/&lt;endpoint&gt;',
     'api_token_expiration_time' => 'Khóa API được thiết lập có thời hạn đến:',
-    'api_reference' => 'Vui lòng xem <a href="https://snipe-it.readme.io/reference" target="_blank">tài liệu API</a> để tìm các endpoint cụ thể và tài liệu API bổ sung.',
+    'api_reference' => 'Vui lòng xem <a href="https://staffingly.readme.io/reference" target="_blank">tài liệu API</a> để tìm các endpoint cụ thể và tài liệu API bổ sung.',
     'profile_updated' => 'Đã cập nhật tài khoản thành công',
     'no_tokens' => 'Bạn chưa tạo mã truy cập cá nhân',
     'enable_sounds' => 'Hiệu ứng âm thanh',

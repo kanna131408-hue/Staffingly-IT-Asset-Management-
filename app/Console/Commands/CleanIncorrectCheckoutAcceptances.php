@@ -14,7 +14,7 @@ class CleanIncorrectCheckoutAcceptances extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:clean-checkout-acceptances';
+    protected $signature = 'staffingly:clean-checkout-acceptances';
 
     /**
      * The console command description.

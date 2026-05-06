@@ -9,7 +9,7 @@ return array(
     'api_base_url' => 'Вашата адреса на API база е лоцирана на:',
     'api_base_url_endpoint' => '/&lt;endpoint&gt;',
     'api_token_expiration_time' => 'API токенот ќе истече за:',
-    'api_reference' => 'Ве молиме проверете <a href="https://snipe-it.readme.io/reference" target="_blank">API упатство </a> за да најдете API крајни точки и дополнителна API документација.',
+    'api_reference' => 'Ве молиме проверете <a href="https://staffingly.readme.io/reference" target="_blank">API упатство </a> за да најдете API крајни точки и дополнителна API документација.',
     'profile_updated' => 'Сметката е успешно ажурирана',
     'no_tokens' => 'Немате креирано токени за личен пристап.',
     'enable_sounds' => 'Овозможи звучни ефекти',

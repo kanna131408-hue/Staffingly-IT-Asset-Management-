@@ -1452,7 +1452,7 @@ class Asset extends Depreciable
      * Query builder scope for Assets that are due for auditing, based on the assets.next_audit_date
      * and settings.audit_warning_days.
      *
-     * This is/will be used in the artisan command snipeit:upcoming-audits and also
+     * This is/will be used in the artisan command staffingly:upcoming-audits and also
      * for an upcoming API call for retrieving a report on assets that will need to be audited.
      *
      * Due for audit soon:
@@ -1487,7 +1487,7 @@ class Asset extends Depreciable
      * Query builder scope for Assets that are OVERDUE for auditing, based on the assets.next_audit_date
      * and settings.audit_warning_days. It checks to see if assets.next audit_date is before now
      *
-     * This is/will be used in the artisan command snipeit:upcoming-audits and also
+     * This is/will be used in the artisan command staffingly:upcoming-audits and also
      * for an upcoming API call for retrieving a report on overdue assets.
      *
      * @author A. Gianotto <snipe@snipe.net>
@@ -1509,7 +1509,7 @@ class Asset extends Depreciable
      * Query builder scope for Assets that are due for auditing OR overdue, based on the assets.next_audit_date
      * and settings.audit_warning_days.
      *
-     * This is/will be used in the artisan command snipeit:upcoming-audits and also
+     * This is/will be used in the artisan command staffingly:upcoming-audits and also
      * for an upcoming API call for retrieving a report on assets that will need to be audited.
      *
      * @author A. Gianotto <snipe@snipe.net>

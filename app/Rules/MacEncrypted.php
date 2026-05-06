@@ -20,7 +20,7 @@ class MacEncrypted implements ValidationRule
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
         try {
-            $attributeName = trim(preg_replace('/_+|snipeit|\d+/', ' ', $attribute));
+            $attributeName = trim(preg_replace('/_+|staffingly|\d+/', ' ', $attribute));
             $decrypted = Crypt::decrypt($value);
             if (!$this->validateRegex($attributeName, $decrypted, ['/^[a-fA-F0-9]{2}:[a-fA-F0-9]{2}:[a-fA-F0-9]{2}:[a-fA-F0-9]{2}:[a-fA-F0-9]{2}:[a-fA-F0-9]{2}$/']) && !is_null($decrypted)) {
                 $fail(trans('validation.mac_address', ['attribute' => $attributeName]));

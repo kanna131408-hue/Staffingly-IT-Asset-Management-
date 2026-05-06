@@ -19,7 +19,7 @@ class EmailEncrypted implements ValidationRule
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
         try {
-            $attributeName = trim(preg_replace('/_+|snipeit|\d+/', ' ', $attribute));
+            $attributeName = trim(preg_replace('/_+|staffingly|\d+/', ' ', $attribute));
             $decrypted = Crypt::decrypt($value);
             if (!$this->validateEmail($attribute, $decrypted, []) && !is_null($decrypted)) {
                 $fail(trans('validation.email', ['attribute' => $attributeName]));

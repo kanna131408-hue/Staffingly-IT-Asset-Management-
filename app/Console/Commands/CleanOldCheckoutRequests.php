@@ -15,7 +15,7 @@ class CleanOldCheckoutRequests extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:clean-old-checkout-requests';
+    protected $signature = 'staffingly:clean-old-checkout-requests';
 
     /**
      * The console command description.

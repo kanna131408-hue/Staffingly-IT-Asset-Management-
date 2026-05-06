@@ -17,7 +17,7 @@ class RestoreDeletedUsers extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:restore-users {--start_date=} {--end_date=}';
+    protected $signature = 'staffingly:restore-users {--start_date=} {--end_date=}';
 
     /**
      * The console command description.

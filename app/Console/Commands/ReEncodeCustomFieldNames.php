@@ -12,7 +12,7 @@ class ReEncodeCustomFieldNames extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:regenerate-fieldnames';
+    protected $signature = 'staffingly:regenerate-fieldnames';
 
     /**
      * The console command description.
@@ -59,17 +59,17 @@ class ReEncodeCustomFieldNames extends Command
             /** Loop through the columns on the assets table */
             foreach ($asset_columns as $asset_column) {
 
-                /** Add ones that start with _snipeit_ to an array for handling */
-                if (strpos($asset_column, '_snipeit_') === 0) {
+                /** Add ones that start with _staffingly_ to an array for handling */
+                if (strpos($asset_column, '_staffingly_') === 0) {
 
                     /**
                      * Get the ID of the custom field based on the fieldname.
-                     * For example, in _snipeit_mac_address_1, we grab the 1 because we know
+                     * For example, in _staffingly_mac_address_1, we grab the 1 because we know
                      * that's the ID of the custom field that created the column.
                      * Then use that ID as the array key for use comparing the actual assets field name
                      * and the db_column value from the custom fields table.
                      */
-                    $last_part = substr(strrchr($asset_column, '_snipeit_'), 1);
+                    $last_part = substr(strrchr($asset_column, '_staffingly_'), 1);
                     $custom_field_columns[$last_part] = $asset_column;
 
                 }

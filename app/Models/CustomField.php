@@ -109,7 +109,7 @@ class CustomField extends Model
      */
     public static function name_to_db_name($name)
     {
-        return '_snipeit_'.preg_replace('/[^a-zA-Z0-9]/', '_', strtolower($name));
+        return '_staffingly_'.preg_replace('/[^a-zA-Z0-9]/', '_', strtolower($name));
     }
 
     /**
@@ -409,9 +409,9 @@ class CustomField extends Model
         $id = $this->id ? $this->id : 'xx';
 
         if (! function_exists('transliterator_transliterate')) {
-            $long_slug = '_snipeit_'.str_slug(mb_convert_encoding(trim($name), "UTF-8"), '_');
+            $long_slug = '_staffingly_'.str_slug(mb_convert_encoding(trim($name), "UTF-8"), '_');
         } else {
-            $long_slug = '_snipeit_'.Utf8Slugger::slugify($name, '_');
+            $long_slug = '_staffingly_'.Utf8Slugger::slugify($name, '_');
         }
 
         return substr($long_slug, 0, 50).'_'.$id;
@@ -437,7 +437,7 @@ class CustomField extends Model
     /**
      * Check to see if there is a custom regex format type
      *
-     * @see https://github.com/grokability/snipe-it/issues/5896
+     * @see https://github.com/grokability/staffingly/issues/5896
      *
      * @author Wes Hulette <jwhulette@gmail.com>
      *

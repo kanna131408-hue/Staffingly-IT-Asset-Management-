@@ -19,7 +19,7 @@ class ObjectImportCommand extends Command
      *
      * @var string
      */
-    protected $name = 'snipeit:import';
+    protected $name = 'staffingly:import';
 
     /**
      * The console command description.

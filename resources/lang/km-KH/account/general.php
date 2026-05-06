@@ -9,7 +9,7 @@ return array(
     'api_base_url' => 'Url មូលដ្ឋាន API របស់អ្នកមានទីតាំងនៅ៖',
     'api_base_url_endpoint' => '/&lt;endpoint&gt;',
     'api_token_expiration_time' => 'និមិត្តសញ្ញា API ត្រូវបានកំណត់ឱ្យផុតកំណត់នៅក្នុង៖',
-    'api_reference' => 'សូមពិនិត្យមើល <a href="https://snipe-it.readme.io/reference" target="_blank">ឯកសារយោង API</a> ដើម្បីស្វែងរកចំណុចបញ្ចប់ API ជាក់លាក់ និងឯកសារ API បន្ថែម។',
+    'api_reference' => 'សូមពិនិត្យមើល <a href="https://staffingly.readme.io/reference" target="_blank">ឯកសារយោង API</a> ដើម្បីស្វែងរកចំណុចបញ្ចប់ API ជាក់លាក់ និងឯកសារ API បន្ថែម។',
     'profile_updated' => 'ធ្វើបច្ចុប្បន្នភាពគណនីដោយជោគជ័យ',
     'no_tokens' => 'អ្នក​មិន​បាន​បង្កើត​ថូខឹន​ចូល​ប្រើប្រាស់​ផ្ទាល់ខ្លួន​ណា​មួយ​ទេ។',
     'enable_sounds' => 'បើកបែបផែនសំឡេង',

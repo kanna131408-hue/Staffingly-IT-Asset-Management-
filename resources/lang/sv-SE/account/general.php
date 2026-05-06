@@ -9,7 +9,7 @@ return array(
     'api_base_url' => 'Din API-bas-url finns på:',
     'api_base_url_endpoint' => '/&lt;endpoint&gt;',
     'api_token_expiration_time' => 'API-tokens är inställda på att upphöra om:',
-    'api_reference' => 'Vänligen kontrollera <a href="https://snipe-it.readme.io/reference" target="_blank">API-dokumentationen</a> för att hitta specifika API-endpoints och ytterligare API relaterad information.',
+    'api_reference' => 'Vänligen kontrollera <a href="https://staffingly.readme.io/reference" target="_blank">API-dokumentationen</a> för att hitta specifika API-endpoints och ytterligare API relaterad information.',
     'profile_updated' => 'Kontot har uppdaterats',
     'no_tokens' => 'Du har inte skapat några personliga åtkomsttokens.',
     'enable_sounds' => 'Aktivera ljudeffekter',

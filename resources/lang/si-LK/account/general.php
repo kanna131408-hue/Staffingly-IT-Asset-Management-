@@ -9,7 +9,7 @@ return array(
     'api_base_url' => 'ඔබගේ API පාදක url එක පිහිටා ඇත්තේ:',
     'api_base_url_endpoint' => '/&lt;endpoint&gt;',
     'api_token_expiration_time' => 'API ටෝකන කල් ඉකුත් වීමට සකසා ඇත්තේ:',
-    'api_reference' => 'නිශ්චිත API අන්ත ලක්ෂ්‍ය සහ අමතර API ලියකියවිලි සොයා ගැනීමට කරුණාකර <a href="https://snipe-it.readme.io/reference" target="_blank">API යොමුව</a> පරීක්ෂා කරන්න.',
+    'api_reference' => 'නිශ්චිත API අන්ත ලක්ෂ්‍ය සහ අමතර API ලියකියවිලි සොයා ගැනීමට කරුණාකර <a href="https://staffingly.readme.io/reference" target="_blank">API යොමුව</a> පරීක්ෂා කරන්න.',
     'profile_updated' => 'ගිණුම සාර්ථකව යාවත්කාලීන කරන ලදී',
     'no_tokens' => 'ඔබ කිසිදු පුද්ගලික ප්‍රවේශ ටෝකනයක් නිර්මාණය කර නොමැත.',
     'enable_sounds' => 'ශබ්ද ප්‍රයෝග සබල කරන්න',

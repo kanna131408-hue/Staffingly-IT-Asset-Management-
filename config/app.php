@@ -20,7 +20,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => env('SITE_NAME', 'Snipe-IT'),
+    'name' => env('SITE_NAME', 'Staffingly'),
 
     /*
     |--------------------------------------------------------------------------
@@ -150,7 +150,7 @@ return [
    |--------------------------------------------------------------------------
    |
    | Normal users will never need to edit this. This option lets you run
-   | Snipe-IT within an I-Frame, which is normally disabled by default for
+   | Staffingly within an I-Frame, which is normally disabled by default for
    | security reasons, to prevent clickjacking. It should normally be set to false.
    |
    */
@@ -232,7 +232,7 @@ return [
     | unless you have a specific need for it.
     |
     | The European Commission now requires at least 3072-bit keys for new SAML certificates
-    | @link https://github.com/grokability/snipe-it/issues/17386
+    | @link https://github.com/grokability/staffingly/issues/17386
     */
 
     'saml_key_size' => env('SAML_KEY_SIZE', 2048),
@@ -244,7 +244,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Normal users will never need to edit this. This option lets you run a
-    | version of Snipe-IT with limited functionality to prevent demo abuse.
+    | version of Staffingly with limited functionality to prevent demo abuse.
     |
     */
 

@@ -9,7 +9,7 @@ return array(
     'api_base_url' => 'Az API alap url címe a következő:',
     'api_base_url_endpoint' => '/&lt;endpoint&gt;',
     'api_token_expiration_time' => 'Az API tokenek lejárati ideje:',
-    'api_reference' => 'Nézze meg a <a href="https://snipe-it.readme.io/reference" target="_blank">API referencia</a> oldalt a végpontok és dokumentáció érdekében.',
+    'api_reference' => 'Nézze meg a <a href="https://staffingly.readme.io/reference" target="_blank">API referencia</a> oldalt a végpontok és dokumentáció érdekében.',
     'profile_updated' => 'A fiók frissítése sikeres',
     'no_tokens' => 'Nincsenek létrehozott személyes tokenek.',
     'enable_sounds' => 'Hangeffektek engedélyezése',

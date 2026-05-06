@@ -207,7 +207,7 @@ class LdapTroubleshooter extends Command
         //$this->line(print_r($settings,true));
         $this->line("STAGE 1: Checking settings");
         if(!$settings->ldap_enabled) {
-            $this->error("WARNING: Snipe-IT's LDAP setting is not turned on. (That may be OK if you're still trying to figure out settings)");
+            $this->error("WARNING: Staffingly's LDAP setting is not turned on. (That may be OK if you're still trying to figure out settings)");
         }
 
         $ldap_conn = false;
@@ -264,7 +264,7 @@ class LdapTroubleshooter extends Command
                 $this->error("WARNING: Using the localhost IP as the LDAP server. This is usually wrong");
             }
             if (ip_in_range($ip, '10.0.0.0/8') || ip_in_range($ip, '192.168.0.0/16') || ip_in_range($ip, '172.16.0.0/12')) {
-                $this->error("WARNING: Using an RFC1918 Private address for LDAP server. This may be correct, but it can be a problem if your Snipe-IT instance is not hosted on your private network");
+                $this->error("WARNING: Using an RFC1918 Private address for LDAP server. This may be correct, but it can be a problem if your Staffingly instance is not hosted on your private network");
             }
         }
 
@@ -406,7 +406,7 @@ class LdapTroubleshooter extends Command
             }
         }
 
-        $this->line("STAGE 6: Test LDAP Login to Snipe-IT");
+        $this->line("STAGE 6: Test LDAP Login to Staffingly");
         foreach($ldap_urls AS $ldap_url) {
             $this->line("Starting auth to " . $ldap_url[0]);
             while(true) {

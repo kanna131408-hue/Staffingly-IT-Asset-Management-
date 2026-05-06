@@ -201,11 +201,11 @@ class CheckoutAcceptance extends Model
         $pdf->setRTL(false);
         $pdf->setLanguageArray($lg);
         $pdf->SetFontSubsetting(true);
-        $pdf->SetCreator('Snipe-IT Asset Management System');
+        $pdf->SetCreator('Staffingly Asset Management System');
         $pdf->SetAuthor($data['assigned_to']);
         $pdf->SetTitle('Asset Acceptance: '.$data['item_tag']);
         $pdf->SetSubject('Asset Acceptance: '.$data['item_tag']);
-        $pdf->SetKeywords('Snipe-IT, assets, acceptance, eula, tos');
+        $pdf->SetKeywords('Staffingly, assets, acceptance, eula, tos');
         $pdf->SetFont('dejavusans', '', 8, '', true);
         $pdf->SetPrintHeader(false);
         $pdf->SetPrintFooter(false);

@@ -16,7 +16,7 @@ class SendUpcomingAuditReport extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:upcoming-audits {--with-output : Display the results in a table in your console in addition to sending the email}';
+    protected $signature = 'staffingly:upcoming-audits {--with-output : Display the results in a table in your console in addition to sending the email}';
 
     /**
      * The console command description.

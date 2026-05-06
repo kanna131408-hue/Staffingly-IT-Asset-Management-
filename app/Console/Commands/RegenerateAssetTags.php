@@ -14,7 +14,7 @@ class RegenerateAssetTags extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:regenerate-tags {--start=} {--output= : info|warn|error|all} ';
+    protected $signature = 'staffingly:regenerate-tags {--start=} {--output= : info|warn|error|all} ';
 
     /**
      * The console command description.

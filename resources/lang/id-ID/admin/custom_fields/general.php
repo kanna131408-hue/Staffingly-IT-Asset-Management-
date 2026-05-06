@@ -67,5 +67,5 @@ return [
         'checkbox' => 'Kotak check',
         'radio' => 'Tombol radio',
     ],
-    'general_help_text' => 'Bidang kustom menyimpan informasi tambahan yang tidak tercakup aset default.. <a href="https://snipe-it.readme.io/docs/custom-fields#/"><i class="fa fa-external-link"></i></a>.',
+    'general_help_text' => 'Bidang kustom menyimpan informasi tambahan yang tidak tercakup aset default.. <a href="https://staffingly.readme.io/docs/custom-fields#/"><i class="fa fa-external-link"></i></a>.',
 ];

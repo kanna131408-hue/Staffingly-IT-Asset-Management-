@@ -1,7 +1,7 @@
-Contact: mailto:security@snipeitapp.com
+Contact: mailto:security@staffinglyapp.com
 Expires: 2025-05-16T11:30:00.000Z
-Acknowledgments: https://snipeitapp.com/thanks
+Acknowledgments: https://staffinglyapp.com/thanks
 Preferred-Languages: en-US, pt-PT, de-DE
-Canonical: https://github.com/grokability/snipe-it/blob/master/public/.well-known/security.txt
-Policy: https://snipeitapp.com/security
-Hiring: https://snipeitapp.com/company/careers
+Canonical: https://github.com/grokability/staffingly/blob/master/public/.well-known/security.txt
+Policy: https://staffinglyapp.com/security
+Hiring: https://staffinglyapp.com/company/careers

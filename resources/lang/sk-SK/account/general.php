@@ -9,7 +9,7 @@ return array(
     'api_base_url' => 'Základná adresa pre API volanie sa nachádza na:',
     'api_base_url_endpoint' => '/&lt;endpoint&gt;',
     'api_token_expiration_time' => 'API token exspiruje:',
-    'api_reference' => 'Prosím skontrolujte <a href="https://snipe-it.readme.io/reference" target="_blank">API referenčnú príručku</a> pre získanie špecifických API endpointov a doplňujúcej API dokumentácie.',
+    'api_reference' => 'Prosím skontrolujte <a href="https://staffingly.readme.io/reference" target="_blank">API referenčnú príručku</a> pre získanie špecifických API endpointov a doplňujúcej API dokumentácie.',
     'profile_updated' => 'Účet bol úspešne upravený',
     'no_tokens' => 'Nemáte žiadne osobné prístupové tokeny.',
     'enable_sounds' => 'Povoliť zvukové efekty',

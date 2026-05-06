@@ -78,7 +78,7 @@ return array(
          * 
          * Hardcoding 2 Paths needed for Docker Containers
          */
-        "chroot" => realpath(base_path()) . ",/var/lib/snipeit/data/uploads,/var/lib/snipeit/data/private_uploads",
+        "chroot" => realpath(base_path()) . ",/var/lib/staffingly/data/uploads,/var/lib/staffingly/data/private_uploads",
 
         /**
          * Whether to enable font subsetting or not.

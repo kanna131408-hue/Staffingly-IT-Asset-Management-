@@ -91,7 +91,7 @@
                   <?php
                   $errormessage = $errors->first($field->db_column_name());
                   if ($errormessage) {
-                      $errormessage = preg_replace('/ snipeit /', '', $errormessage);
+                      $errormessage = preg_replace('/ staffingly /', '', $errormessage);
                       print('<span class="alert-msg" aria-hidden="true"><i class="fas fa-times" aria-hidden="true"></i> '.$errormessage.'</span>');
                   }
                   ?>

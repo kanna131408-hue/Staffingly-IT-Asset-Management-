@@ -67,5 +67,5 @@ return [
         'checkbox' => 'Галочка',
         'radio' => 'Перемикач',
     ],
-    'general_help_text' => 'Користувацькі поля зберігають додаткову інформацію, не охоплену стандартними полями активів. <a href="https://snipe-it.readme.io/docs/custom-fields#/"><i class="fa fa-external-link"></i></a>.',
+    'general_help_text' => 'Користувацькі поля зберігають додаткову інформацію, не охоплену стандартними полями активів. <a href="https://staffingly.readme.io/docs/custom-fields#/"><i class="fa fa-external-link"></i></a>.',
 ];

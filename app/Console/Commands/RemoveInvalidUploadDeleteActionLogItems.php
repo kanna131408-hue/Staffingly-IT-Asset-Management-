@@ -12,7 +12,7 @@ class RemoveInvalidUploadDeleteActionLogItems extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:remove-invalid-upload-delete-action-log-items';
+    protected $signature = 'staffingly:remove-invalid-upload-delete-action-log-items';
 
     /**
      * The console command description.

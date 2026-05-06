@@ -16,7 +16,7 @@ class SendInventoryAlerts extends Command
      *
      * @var string
      */
-    protected $signature = 'snipeit:inventory-alerts';
+    protected $signature = 'staffingly:inventory-alerts';
 
     /**
      * The console command description.

@@ -9,7 +9,7 @@ return array(
     'api_base_url' => 'Il tuo URL di base API è:',
     'api_base_url_endpoint' => '/&lt;endpoint&gt;',
     'api_token_expiration_time' => 'I token API scadranno fra:',
-    'api_reference' => 'Controlla la <a href="https://snipe-it.readme.io/reference" target="_blank">Guida di Riferimento delle API</a> per trovare specifici endpoint API e documentazione aggiuntiva.',
+    'api_reference' => 'Controlla la <a href="https://staffingly.readme.io/reference" target="_blank">Guida di Riferimento delle API</a> per trovare specifici endpoint API e documentazione aggiuntiva.',
     'profile_updated' => 'Account aggiornato con successo',
     'no_tokens' => 'Non hai creato nessun token di accesso personale.',
     'enable_sounds' => 'Attiva gli effetti sonori',

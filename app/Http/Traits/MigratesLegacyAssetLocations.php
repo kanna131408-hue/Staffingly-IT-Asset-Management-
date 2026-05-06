@@ -9,7 +9,7 @@ trait MigratesLegacyAssetLocations
 {
     /**
      * This is just meant to correct legacy issues where some user data would have 0
-     * as a location ID, which isn't valid. Later versions of Snipe-IT have stricter validation
+     * as a location ID, which isn't valid. Later versions of Staffingly have stricter validation
      * rules, so it's necessary to fix this for long-time users. It's kinda gross, but will help
      * people (and their data) in the long run
      * @param Asset $asset

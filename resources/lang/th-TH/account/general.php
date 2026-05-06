@@ -9,7 +9,7 @@ return array(
     'api_base_url' => 'API base url ของคุณอยู่ที่:',
     'api_base_url_endpoint' => '/&lt;endpoint&gt;',
     'api_token_expiration_time' => 'โทเค็น API จะหมดอายุใน:',
-    'api_reference' => 'โปรดตรวจสอบ <a href="https://snipe-it.readme.io/reference" target="_blank">เอกสารอ้างอิง API</a> เพื่อค้นหาเอนด์พอยต์ API เฉพาะและเอกสารประกอบ API เพิ่มเติม',
+    'api_reference' => 'โปรดตรวจสอบ <a href="https://staffingly.readme.io/reference" target="_blank">เอกสารอ้างอิง API</a> เพื่อค้นหาเอนด์พอยต์ API เฉพาะและเอกสารประกอบ API เพิ่มเติม',
     'profile_updated' => 'อัปเดตบัญชีสำเร็จแล้ว',
     'no_tokens' => 'คุณไม่ได้สร้างโทเค็น การเข้าถึงส่วนตัวใด ๆ',
     'enable_sounds' => 'เปิดใช้งานเอฟเฟกต์เสียง',

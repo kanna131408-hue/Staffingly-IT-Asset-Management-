@@ -35,7 +35,7 @@ class Setting extends Model
      *
      * @var string
      */
-    public const SETUP_CHECK_KEY = 'snipeit_setup_check';
+    public const SETUP_CHECK_KEY = 'staffingly_setup_check';
 
     /**
      * Whether the model should inject it's identifier to the unique

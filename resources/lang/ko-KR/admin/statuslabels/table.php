@@ -8,7 +8,7 @@ return array(
     'default_label' => '기본 라벨',
     'default_label_help' => '이것은 자산을 생성 / 수정 시에 선택 상자의 최상단의 일반적으로 상태 레이블을 표시되는데 사용됩니다.',
     'deployable'      	=> '사용가능',
-    'info'      	=> 'Status label types are used to describe the various states your assets could be in. They may be out for repair, lost/stolen, etc. You can create new status labels for your deployable, pending and archived assets according to your own workflow. For more information, <a href="https://snipe-it.readme.io/docs/overview#status-labels" target="_blank">see the documentation <i class="fa fa-external-link"></i></a>.',
+    'info'      	=> 'Status label types are used to describe the various states your assets could be in. They may be out for repair, lost/stolen, etc. You can create new status labels for your deployable, pending and archived assets according to your own workflow. For more information, <a href="https://staffingly.readme.io/docs/overview#status-labels" target="_blank">see the documentation <i class="fa fa-external-link"></i></a>.',
     'name'      	=> '상태 명',
     'pending'      	=> '대기중',
     'status_type'   => '상태 유형',
