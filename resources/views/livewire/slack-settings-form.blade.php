@@ -126,7 +126,7 @@
                                     <label for="webhook_botname">{{ trans('admin/settings/general.webhook_botname',['app' => $webhook_name ]) }}</label>
                                 </div>
                                 <div class="col-md-9">
-                                        <input type="text" wire:model.blur="webhook_botname" class='form-control' placeholder="Snipe-Bot" {{ old('webhook_botname', $webhook_botname)}}{{ Helper::isDemoMode() ? ' disabled' : ''}}>
+                                        <input type="text" wire:model.blur="webhook_botname" class='form-control' placeholder="Staffingly-Bot" {{ old('webhook_botname', $webhook_botname)}}{{ Helper::isDemoMode() ? ' disabled' : ''}}>
                                     {!! $errors->first('webhook_botname', '<span class="alert-msg" aria-hidden="true">:message</span>') !!}
                                 </div><!--col-md-10-->
                             </div>

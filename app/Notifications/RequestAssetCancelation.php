@@ -76,7 +76,7 @@ class RequestAssetCancelation extends Notification
         $item = $this->item;
         $note = $this->note;
         $qty = $this->item_quantity;
-        $botname = ($this->settings->webhook_botname) ? $this->settings->webhook_botname : 'Snipe-Bot';
+        $botname = ($this->settings->webhook_botname) ? $this->settings->webhook_botname : 'Staffingly-Bot';
         $channel = ($this->settings->webhook_channel) ? $this->settings->webhook_channel : '';
 
         $fields = [

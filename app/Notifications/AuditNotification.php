@@ -73,7 +73,7 @@ class AuditNotification extends Notification
         return (new SlackMessage)
             ->success()
             ->content(class_basename(get_class($this->params['item'])).' '.trans('general.audited'))
-            ->from(($this->settings->webhook_botname) ? $this->settings->webhook_botname : 'Snipe-Bot')
+            ->from(($this->settings->webhook_botname) ? $this->settings->webhook_botname : 'Staffingly-Bot')
             ->to($channel)
             ->attachment(function ($attachment) {
                 $item = $this->params['item'] ?? null;

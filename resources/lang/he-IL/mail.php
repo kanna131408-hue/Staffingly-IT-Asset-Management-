@@ -100,7 +100,7 @@ return [
     'supplier' => 'ספק',
     'tag' => 'תָג',
     'test_email' => 'מבחן דוא"ל מאת Staffingly',
-    'test_mail_text' => 'זהו מבחן מן Snipe- IT ניהול מערכת. אם יש לך את זה, הדואר עובד :)',
+    'test_mail_text' => 'זהו מבחן מן Staffingly- IT ניהול מערכת. אם יש לך את זה, הדואר עובד :)',
     'the_following_item' => 'הפריט הבא נבדק:',
     'to_reset' => 'כדי לאפס את: סיסמת האינטרנט, מלא טופס זה:',
     'type' => 'סוּג',
@@ -112,6 +112,6 @@ return [
     'welcome' => 'ברוכים הבאים: שם',
     'welcome_to' => 'ברוכים הבאים ל: אינטרנט!',
     'your_assets' => 'View Your Assets',
-    'your_credentials' => 'שלך Snipe- IT אישורים',
+    'your_credentials' => 'שלך Staffingly- IT אישורים',
     'mail_sent' => 'Mail sent successfully!',
 ];

@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ ($snipeSettings) && ($snipeSettings->site_name) ? $snipeSettings->site_name : 'Staffingly' }}</title>
 
-    <link rel="shortcut icon" type="image/ico" href="{{ ($snipeSettings) && ($snipeSettings->favicon!='') ?  Storage::disk('public')->url(e($snipeSettings->favicon)) : config('app.url').'/favicon.ico' }}">
+    <link rel="shortcut icon" type="image/png" href="{{ asset('img/sly favicon.ico') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/logo.png') }}">
     {{-- stylesheets --}}
     <link rel="stylesheet" href="{{ url(mix('css/dist/all.css')) }}">
 

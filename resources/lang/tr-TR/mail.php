@@ -99,7 +99,7 @@ return [
     'snipe_webhook_summary' => 'Staffingly Entegrasyon Test Özeti',
     'supplier' => 'Tedarikçi',
     'tag' => 'Etiket',
-    'test_email' => 'Snipe-It Test Maili',
+    'test_email' => 'Staffingly Test Maili',
     'test_mail_text' => 'Staffingly varlık yönetim sisteminden bir denemedir',
     'the_following_item' => 'Aşağıdaki varlık geri alındı olarak işaretlendi: ',
     'to_reset' => 'Şifre sıfırlamak için :web password, formu doldurun:',

@@ -14,12 +14,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
 
-    <link rel="apple-touch-icon"
-          href="{{ ($snipeSettings) && ($snipeSettings->favicon!='') ?  Storage::disk('public')->url(e($snipeSettings->logo)) :  config('app.url').'/img/snipe-logo-bug.png' }}">
-    <link rel="apple-touch-startup-image"
-          href="{{ ($snipeSettings) && ($snipeSettings->favicon!='') ?  Storage::disk('public')->url(e($snipeSettings->logo)) :  config('app.url').'/img/snipe-logo-bug.png' }}">
-    <link rel="shortcut icon" type="image/ico"
-          href="{{ ($snipeSettings) && ($snipeSettings->favicon!='') ?  Storage::disk('public')->url(e($snipeSettings->favicon)) : config('app.url').'/favicon.ico' }}">
+    <link rel="apple-touch-icon" href="{{ asset('img/logo.png') }}">
+    <link rel="apple-touch-startup-image" href="{{ asset('img/logo.png') }}">
+    <link rel="shortcut icon" type="image/png" href="{{ asset('img/sly favicon.ico') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/logo.png') }}">
 
 
     <meta name="csrf-token" content="{{ csrf_token() }}">

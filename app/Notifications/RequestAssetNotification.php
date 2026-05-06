@@ -75,7 +75,7 @@ class RequestAssetNotification extends Notification
         $qty = $this->item_quantity;
         $item = $this->item;
         $note = $this->note;
-        $botname = ($this->settings->webhook_botname) ? $this->settings->webhook_botname : 'Snipe-Bot';
+        $botname = ($this->settings->webhook_botname) ? $this->settings->webhook_botname : 'Staffingly-Bot';
         $channel = ($this->settings->webhook_channel) ? $this->settings->webhook_channel : '';
 
         $fields = [

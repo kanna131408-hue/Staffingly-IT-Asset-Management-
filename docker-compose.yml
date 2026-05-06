@@ -10,6 +10,9 @@ services:
     restart: unless-stopped
     volumes:
       - storage:/var/lib/snipeit
+      - ./resources/views:/var/www/html/resources/views
+      - ./resources/lang:/var/www/html/resources/lang
+      - ./public:/var/www/html/public
     ports:
       - "${APP_PORT:-8000}:80"
     depends_on:

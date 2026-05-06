@@ -254,7 +254,7 @@ return [
     'shortcuts_enabled'         => 'Enable Shortcuts',
     'shortcuts_help_text'       => '<strong>Windows</strong>: Alt + Access key, <strong>Mac</strong>: Control + Option + Access key',
     'snipe_version'  			=> 'Staffingly версия',
-    'support_footer'            => 'Връзки към Snipe-it поддръжката във футъра',
+    'support_footer'            => 'Връзки към Staffingly поддръжката във футъра',
     'support_footer_help'       => 'Указва визуализацията на връзки към поддръжката на Staffingly и потребителската документация',
     'version_footer'            => 'Версия в долен колонтитул ',
     'version_footer_help'       => 'Определя кой ще вижда Staffingly версията и номера на компилация.',

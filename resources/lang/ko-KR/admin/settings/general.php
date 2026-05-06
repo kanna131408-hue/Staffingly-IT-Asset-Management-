@@ -167,7 +167,7 @@ return [
     'login_common_disabled_text' => '다른 인증 메커니즘 비활성화',
     'login_common_disabled_help' => '이 옵션은 다른 인증 메커니즘을 비활성화 합니다. REMOTE_USER 로그인이 이미 작동하고 있다면 이 옵션을 활성화 하세요.',
     'login_remote_user_custom_logout_url_text' => '사용자 정의 로그아웃 URL',
-    'login_remote_user_custom_logout_url_help' => '채워진 사용자는 SnipeIT 세션이 종료된 후에 이 URL로 리디렉션됩니다. 이 기능은 인증 제공자의 사용자 세션을 정확하게 닫는데 유용합니다.',
+    'login_remote_user_custom_logout_url_help' => '채워진 사용자는 Staffingly 세션이 종료된 후에 이 URL로 리디렉션됩니다. 이 기능은 인증 제공자의 사용자 세션을 정확하게 닫는데 유용합니다.',
     'login_remote_user_header_name_text' => '사용자 정의 사용자 이름 헤더',
     'login_remote_user_header_name_help' => 'Use the specified header instead of REMOTE_USER',
     'logo'                    	=> '로고',

@@ -257,7 +257,7 @@ return [
     'support_footer'            => 'Links de rodapé de suporte ',
     'support_footer_help'       => 'Especifique quem vê os links para as informações de Suporte Staffingly e o Manual do Usuário',
     'version_footer'            => 'Versão no Rodapé ',
-    'version_footer_help'       => 'Especifica quem vê o número de versão e compilação do Snipe-lT.',
+    'version_footer_help'       => 'Especifica quem vê o número de versão e compilação do Staffingly-lT.',
     'system'                    => 'Informação do sistema',
     'update'                    => 'Atualizar Configurações',
     'value'                     => 'Valor',
