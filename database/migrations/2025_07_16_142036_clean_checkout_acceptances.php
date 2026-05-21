@@ -13,7 +13,7 @@ return new class extends Migration
     public function up(): void
     {
         //
-        Artisan::call("snipeit:clean-checkout-acceptances");
+        Artisan::call("staffingly:clean-checkout-acceptances");
     }
 
     /**

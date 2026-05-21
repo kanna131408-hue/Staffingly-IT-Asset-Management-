@@ -16,7 +16,7 @@ class AddFirstCounterTotalsToAssets extends Migration
     {
         // This artisan call may take a while
         \Log::info('This could take a while.... ');
-        Artisan::call('snipeit:counter-sync');
+        Artisan::call('staffingly:counter-sync');
         $output = Artisan::output();
         \Log::info($output);
     }
