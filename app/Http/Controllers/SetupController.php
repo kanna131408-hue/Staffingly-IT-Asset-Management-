@@ -179,27 +179,34 @@ class SetupController extends Controller
         $settings->zerofill_count = $request->input('zerofill_count') ?: 0;
 
         if ((! $user->isValid()) || (! $settings->isValid())) {
-            return redirect()->back()->withInput()->withErrors($user->getErrors())->withErrors($settings->getErrors());
+            $error_messages = array_merge($user->getErrors()->all(), $settings->getErrors()->all());
+            Log::error('Setup validation failed: ' . implode(', ', $error_messages));
+            return redirect()->back()->withInput()->withErrors($user->getErrors())->withErrors($settings->getErrors())->with('error', 'Validation failed: ' . implode(', ', $error_messages));
         } else {
-            $user->save();
-            Auth::login($user, true);
-            $settings->save();
+            try {
+                $user->save();
+                Auth::login($user, true);
+                $settings->save();
 
-            if ($request->input('email_creds') == '1') {
-                $data = [];
-                $data['email'] = $user->email;
-                $data['username'] = $user->username;
-                $data['first_name'] = $user->first_name;
-                $data['last_name'] = $user->last_name;
-                $data['password'] = $request->input('password');
-                $user->notify(new FirstAdminNotification($data));
+                if ($request->input('email_creds') == '1') {
+                    $data = [];
+                    $data['email'] = $user->email;
+                    $data['username'] = $user->username;
+                    $data['first_name'] = $user->first_name;
+                    $data['last_name'] = $user->last_name;
+                    $data['password'] = $request->input('password');
+                    $user->notify(new FirstAdminNotification($data));
+                }
+
+                return redirect()
+                    ->route('setup.done')
+                    ->with('section', trans('general.setup_create_admin'))
+                    ->with('icon', 'fa-solid fa-champagne-glasses')
+                    ->with('success', trans('admin/settings/general.create_admin_success'));
+            } catch (\Exception $e) {
+                Log::error('Setup save failed: ' . $e->getMessage() . "\n" . $e->getTraceAsString());
+                return redirect()->back()->withInput()->with('error', 'Database save failed: ' . $e->getMessage());
             }
-
-            return redirect()
-                ->route('setup.done')
-                ->with('section', trans('general.setup_create_admin'))
-                ->with('icon', 'fa-solid fa-champagne-glasses')
-                ->with('success', trans('admin/settings/general.create_admin_success'));
         }
     }
 
