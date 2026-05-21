@@ -32,8 +32,9 @@ return [
      * how many proxies that client's request has
      * subsequently passed through.
      */
-    'proxies' => env('APP_TRUSTED_PROXIES') !== null ?
-        explode(',', env('APP_TRUSTED_PROXIES')) : '*',
+    'proxies' => (env('APP_TRUSTED_PROXIES') === '*' || env('APP_TRUSTED_PROXIES') === '**')
+        ? env('APP_TRUSTED_PROXIES')
+        : (env('APP_TRUSTED_PROXIES') !== null ? explode(',', env('APP_TRUSTED_PROXIES')) : '*'),
 
     /*
      * To trust one or more specific proxies that connect

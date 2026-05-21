@@ -47,21 +47,30 @@ file_env MAIL_PORT
 file_env MAIL_USERNAME
 file_env MAIL_PASSWORD
 
+# Read existing .env values as fallbacks (so we don't overwrite correct defaults with empty env vars)
+OLD_DB_HOST=$(grep -E "^DB_HOST=" /var/www/html/.env | cut -d= -f2-)
+OLD_DB_PORT=$(grep -E "^DB_PORT=" /var/www/html/.env | cut -d= -f2-)
+OLD_DB_DATABASE=$(grep -E "^DB_DATABASE=" /var/www/html/.env | cut -d= -f2-)
+OLD_DB_USERNAME=$(grep -E "^DB_USERNAME=" /var/www/html/.env | cut -d= -f2-)
+OLD_DB_PASSWORD=$(grep -E "^DB_PASSWORD=" /var/www/html/.env | cut -d= -f2-)
+OLD_APP_KEY=$(grep -E "^APP_KEY=" /var/www/html/.env | cut -d= -f2-)
+OLD_APP_URL=$(grep -E "^APP_URL=" /var/www/html/.env | cut -d= -f2-)
+
 # Update .env file with actual environment variables
 echo "Updating /var/www/html/.env with runtime environment variables..."
 cat <<EOF > /var/www/html/.env
 APP_ENV=production
 APP_DEBUG=${APP_DEBUG:-false}
-APP_KEY=${APP_KEY}
-APP_URL=${APP_URL}
+APP_KEY=${APP_KEY:-$OLD_APP_KEY}
+APP_URL=${APP_URL:-$OLD_APP_URL}
 APP_TRUSTED_PROXIES=${APP_TRUSTED_PROXIES:-*}
 
 DB_CONNECTION=${DB_CONNECTION:-pgsql}
-DB_HOST=${DB_HOST}
-DB_PORT=${DB_PORT:-5432}
-DB_DATABASE=${DB_DATABASE}
-DB_USERNAME=${DB_USERNAME}
-DB_PASSWORD=${DB_PASSWORD}
+DB_HOST=${DB_HOST:-$OLD_DB_HOST}
+DB_PORT=${DB_PORT:-${OLD_DB_PORT:-5432}}
+DB_DATABASE=${DB_DATABASE:-$OLD_DB_DATABASE}
+DB_USERNAME=${DB_USERNAME:-$OLD_DB_USERNAME}
+DB_PASSWORD=${DB_PASSWORD:-$OLD_DB_PASSWORD}
 DB_PREFIX=${DB_PREFIX:-null}
 
 MAIL_MAILER=${MAIL_MAILER:-smtp}
