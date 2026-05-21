@@ -60,7 +60,13 @@ class MigrateMacAddress extends Migration
         });
 
         if (Schema::hasColumn('assets', '_snipeit_mac_address')) {
-            DB::statement('ALTER TABLE assets CHANGE _snipeit_mac_address mac_address varchar(255)');
+            if (DB::connection()->getDriverName() === 'mysql') {
+                DB::statement('ALTER TABLE assets CHANGE _snipeit_mac_address mac_address varchar(255)');
+            } else {
+                Schema::table('assets', function (Blueprint $table) {
+                    $table->renameColumn('_snipeit_mac_address', 'mac_address');
+                });
+            }
         }
     }
 }

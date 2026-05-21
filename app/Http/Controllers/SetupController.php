@@ -246,11 +246,21 @@ class SetupController extends Controller
      */
     public function setupMigrate()
     {
-        Artisan::call('migrate', ['--force' => true]);
-        $output = Artisan::output();
-        if ((! file_exists(storage_path().'/oauth-private.key')) || (! file_exists(storage_path().'/oauth-public.key'))) {
-            Artisan::call('migrate', ['--path' => 'vendor/laravel/passport/database/migrations', '--force' => true]);
-            Artisan::call('passport:install', ['--no-interaction' => true]);
+        try {
+            Artisan::call('migrate', ['--force' => true]);
+            $output = Artisan::output();
+            if ((! file_exists(storage_path().'/oauth-private.key')) || (! file_exists(storage_path().'/oauth-public.key'))) {
+                Artisan::call('migrate', ['--path' => 'vendor/laravel/passport/database/migrations', '--force' => true]);
+                Artisan::call('passport:install', ['--no-interaction' => true]);
+            }
+        } catch (\Exception $e) {
+            $output = "Migration Error! Details:\n" . $e->getMessage() . "\n\nStack trace:\n" . $e->getTraceAsString();
+            return view('setup/migrate')
+                ->with('success', false)
+                ->with('output', trim($output))
+                ->with('step', 2)
+                ->with('section', trans('general.setup_create_database'))
+                ->with('icon', 'fa-solid fa-triangle-exclamation');
         }
 
         return view('setup/migrate')
