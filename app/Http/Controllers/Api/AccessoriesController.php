@@ -79,6 +79,9 @@ class AccessoriesController extends Controller
                 return in_array($key, $allowed_columns);
             }, ARRAY_FILTER_USE_KEY);
 
+            $filter = array_filter($filter, function ($value) {
+                return !is_null($value) && $value !== '';
+            });
         }
 
         if ((! is_null($filter)) && (count($filter)) > 0) {

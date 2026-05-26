@@ -151,6 +151,9 @@ class AssetsController extends Controller
                 return in_array($key, $allowed_columns);
             }, ARRAY_FILTER_USE_KEY);
 
+            $filter = array_filter($filter, function ($value) {
+                return !is_null($value) && $value !== '';
+            });
         }
 
         $assets = Asset::select('assets.*')
