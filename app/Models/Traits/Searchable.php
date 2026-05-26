@@ -26,25 +26,27 @@ trait Searchable
     {
         $terms = $this->prepeareSearchTerms($search);
 
-        /**
-         * Search the attributes of this model
-         */
-        $query = $this->searchAttributes($query, $terms);
+        $query = $query->where(function ($subQuery) use ($terms) {
+            /**
+             * Search the attributes of this model
+             */
+            $subQuery = $this->searchAttributes($subQuery, $terms);
 
-        /**
-         * Search through the custom fields of the model
-         */
-        $query = $this->searchCustomFields($query, $terms);
+            /**
+             * Search through the custom fields of the model
+             */
+            $subQuery = $this->searchCustomFields($subQuery, $terms);
 
-        /**
-         * Search through the relations of the model
-         */
-        $query = $this->searchRelations($query, $terms);
+            /**
+             * Search through the relations of the model
+             */
+            $subQuery = $this->searchRelations($subQuery, $terms);
 
-        /**
-         * Search for additional attributes defined by the model
-         */
-        $query = $this->advancedTextSearch($query, $terms);
+            /**
+             * Search for additional attributes defined by the model
+             */
+            $subQuery = $this->advancedTextSearch($subQuery, $terms);
+        });
 
         try {
             $logPath = public_path('query_log.txt');
@@ -78,6 +80,7 @@ trait Searchable
     private function searchAttributes(Builder $query, array $terms)
     {
         $table = $this->getTable();
+        $operator = $this->getLikeOperator();
 
         $firstConditionAdded = false;
 
@@ -99,13 +102,13 @@ trait Searchable
                  * @todo This does the job, but is inelegant and fragile
                  */
                 if (! $firstConditionAdded) {
-                    $query = $query->where($table.'.'.$column, 'LIKE', '%'.$term.'%');
+                    $query = $query->where($table.'.'.$column, $operator, '%'.$term.'%');
 
                     $firstConditionAdded = true;
                     continue;
                 }
 
-                $query = $query->orWhere($table.'.'.$column, 'LIKE', '%'.$term.'%');
+                $query = $query->orWhere($table.'.'.$column, $operator, '%'.$term.'%');
             }
         }
 
@@ -130,10 +133,11 @@ trait Searchable
         }
 
         $customFields = CustomField::all();
+        $operator = $this->getLikeOperator();
 
         foreach ($customFields as $field) {
             foreach ($terms as $term) {
-                $query->orWhere($this->getTable().'.'.$field->db_column_name(), 'LIKE', '%'.$term.'%');
+                $query->orWhere($this->getTable().'.'.$field->db_column_name(), $operator, '%'.$term.'%');
             }
         }
 
@@ -149,9 +153,10 @@ trait Searchable
      */
     private function searchRelations(Builder $query, array $terms)
     {
+        $operator = $this->getLikeOperator();
         foreach ($this->getSearchableRelations() as $relation => $columns) {
             $query = $query->orWhereHas(
-                $relation, function ($query) use ($relation, $columns, $terms) {
+                $relation, function ($query) use ($relation, $columns, $terms, $operator) {
                     $table = $this->getRelationTable($relation);
 
                     /**
@@ -165,12 +170,12 @@ trait Searchable
                     foreach ($columns as $column) {
                         foreach ($terms as $term) {
                             if (! $firstConditionAdded) {
-                                $query->where($table.'.'.$column, 'LIKE', '%'.$term.'%');
+                                $query->where($table.'.'.$column, $operator, '%'.$term.'%');
                                 $firstConditionAdded = true;
                                 continue;
                             }
 
-                            $query->orWhere($table.'.'.$column, 'LIKE', '%'.$term.'%');
+                            $query->orWhere($table.'.'.$column, $operator, '%'.$term.'%');
                         }
                     }
                     // I put this here because I only want to add the concat one time in the end of the user relation search
@@ -288,14 +293,20 @@ trait Searchable
     {
         $mappedColumns = collect($columns)->map(fn($column) => DB::getTablePrefix() . $column)->toArray();
 
-        $driver = config('database.connections.' . config('database.default') . '.driver');
+        $driver = 'mysql';
+        try {
+            $driver = DB::connection()->getDriverName();
+        } catch (\Exception $e) {
+            // fallback
+        }
+        $operator = $driver === 'pgsql' ? 'ILIKE' : 'LIKE';
 
         if ($driver === 'sqlite') {
-            return implode("||' '||", $mappedColumns) . ' LIKE ?';
+            return implode("||' '||", $mappedColumns) . " {$operator} ?";
         }
 
-        // Default to MySQL's concatenation method
-        return 'CONCAT(' . implode('," ",', $mappedColumns) . ') LIKE ?';
+        // Default to MySQL/Postgres's concatenation method
+        return "CONCAT(" . implode(",' ',", $mappedColumns) . ") {$operator} ?";
     }
 
     /**
@@ -309,5 +320,20 @@ trait Searchable
     public function scopeOrWhereMultipleColumns($query, array $columns, $term)
     {
         return $query->orWhereRaw($this->buildMultipleColumnSearch($columns), ["%{$term}%"]);
+    }
+
+    /**
+     * Returns case-insensitive ILIKE operator for pgsql and standard LIKE for other drivers.
+     *
+     * @return string
+     */
+    private function getLikeOperator()
+    {
+        try {
+            $driver = DB::connection()->getDriverName();
+            return $driver === 'pgsql' ? 'ILIKE' : 'LIKE';
+        } catch (\Exception $e) {
+            return 'LIKE';
+        }
     }
 }
