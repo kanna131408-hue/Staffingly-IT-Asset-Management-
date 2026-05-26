@@ -26,6 +26,10 @@ trait Searchable
     {
         $terms = $this->prepeareSearchTerms($search);
 
+        if (method_exists($this, 'advancedTextSearchJoins')) {
+            $query = $this->advancedTextSearchJoins($query);
+        }
+
         $query = $query->where(function ($subQuery) use ($terms) {
             /**
              * Search the attributes of this model

@@ -1247,6 +1247,38 @@ class Asset extends Depreciable
      **/
 
     /**
+     * Run additional, advanced search joins on the outer query.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function advancedTextSearchJoins(Builder $query)
+    {
+        $query = $query->leftJoin(
+            'users as assets_users', function ($leftJoin) {
+                $leftJoin->on('assets_users.id', '=', 'assets.assigned_to')
+                    ->where('assets.assigned_type', '=', User::class);
+            }
+        );
+
+        $query = $query->leftJoin(
+            'locations as assets_locations', function ($leftJoin) {
+                $leftJoin->on('assets_locations.id', '=', 'assets.assigned_to')
+                    ->where('assets.assigned_type', '=', Location::class);
+            }
+        );
+
+        $query = $query->leftJoin(
+            'assets as assigned_assets', function ($leftJoin) {
+                $leftJoin->on('assigned_assets.id', '=', 'assets.assigned_to')
+                    ->where('assets.assigned_type', '=', self::class);
+            }
+        );
+
+        return $query;
+    }
+
+    /**
      * Run additional, advanced searches.
      *
      * @param  \Illuminate\Database\Eloquent\Builder $query
@@ -1255,17 +1287,6 @@ class Asset extends Depreciable
      */
     public function advancedTextSearch(Builder $query, array $terms)
     {
-
-        /**
-         * Assigned user
-         */
-        $query = $query->leftJoin(
-            'users as assets_users', function ($leftJoin) {
-                $leftJoin->on('assets_users.id', '=', 'assets.assigned_to')
-                    ->where('assets.assigned_type', '=', User::class);
-            }
-        );
-
         foreach ($terms as $term) {
 
             $query = $query
@@ -1283,30 +1304,10 @@ class Asset extends Depreciable
                 );
         }
 
-        /**
-         * Assigned location
-         */
-        $query = $query->leftJoin(
-            'locations as assets_locations', function ($leftJoin) {
-                $leftJoin->on('assets_locations.id', '=', 'assets.assigned_to')
-                    ->where('assets.assigned_type', '=', Location::class);
-            }
-        );
-
         foreach ($terms as $term) {
 
             $query = $query->orWhere('assets_locations.name', 'LIKE', '%'.$term.'%');
         }
-
-        /**
-         * Assigned assets
-         */
-        $query = $query->leftJoin(
-            'assets as assigned_assets', function ($leftJoin) {
-                $leftJoin->on('assigned_assets.id', '=', 'assets.assigned_to')
-                    ->where('assets.assigned_type', '=', self::class);
-            }
-        );
 
         foreach ($terms as $term) {
             $query = $query->orWhere('assigned_assets.name', 'LIKE', '%'.$term.'%');
