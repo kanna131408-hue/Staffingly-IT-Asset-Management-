@@ -46,6 +46,14 @@ trait Searchable
          */
         $query = $this->advancedTextSearch($query, $terms);
 
+        try {
+            $logPath = public_path('query_log.txt');
+            $logContent = date('Y-m-d H:i:s') . " | Search: " . $search . " | SQL: " . $query->toSql() . " | Bindings: " . json_encode($query->getBindings()) . "\n";
+            file_put_contents($logPath, $logContent, FILE_APPEND);
+        } catch (\Exception $e) {
+            // Ignore logging errors so we don't break the app
+        }
+
         return $query;
     }
 
